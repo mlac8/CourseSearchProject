@@ -99,7 +99,7 @@ public class Main {
     Java program itself.
      */
     private static void selectSome(Statement s)
-            throws SQLException, ClassNotFoundException {
+            throws Exception {
 
         String queryString;
         ResultSet rs;
@@ -120,5 +120,7 @@ public class Main {
                     rs.getString (4), rs.getString (6),
                     rs.getString (7));
         }
+        System.out.println ("************************************************");
+
     } // end selectSome
 } // end class Main
